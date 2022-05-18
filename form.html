@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Login_form {
+        width: 40vw;
+        height: 30vw;
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 7%;
+    }
+
+    .Login_form div {
+        margin-bottom: 10px;
+    }
+
+    #fname,#lname,#email,#password{
+       
+        height: 1.4rem;
+    }
+</style>
+
+<body>
+    <div class="Login_form">
+        <form action="results.html" method="GET">
+
+            <div> <input type="text" placeholder="First name" name="fname" id="fname">
+                <input type="text" name="lname" id="lname" placeholder="Enter last name">
+            </div>
+            <div class="mai">
+                <span>Email </span>
+                <input type="email" name="Email" id="email" placeholder="Enter email">
+            </div>
+            <div>
+                <span>Password</span>
+                <input type="password" name="password" placeholder="Enter the password" id="password" required>
+            </div>
+
+            <div>
+                Favourite Food :
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana" checked>
+
+            </div>
+            <div>
+                <label for="">Gender :
+                </label>
+                <label for="">Male</label>
+                <input type="radio" name="gender" id="gender" value="male">
+                <label for="">Female</label>
+                <input type="radio" name="gender" id="gender" value="female">
+            </div>
+            <!-- <input type="submit" value="submit"> -->
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+    </div>
+    </div>
+    </form>
+</body>
+
+</html>
